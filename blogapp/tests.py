@@ -1,7 +1,6 @@
 from django.test import SimpleTestCase
 from blogapp.service import get_all_blog_titles
-from djangomockingbird.make_mocks import make_mocks
-from djangomockingbird import mock_model
+from djangomockingbird.decorator import mock_model
 
 from blogapp.models import BlogPost
 import blogapp
