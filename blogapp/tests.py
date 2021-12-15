@@ -1,6 +1,6 @@
 from django.test import SimpleTestCase
 from blogapp.service import get_all_blog_titles
-from djangomockingbird.decorator import mock_model
+from djangomockingbird import mock_model
 
 from blogapp.models import BlogPost
 import blogapp
@@ -10,7 +10,6 @@ import blogapp
 
 class ServiceTestCase(SimpleTestCase):
     
-
     @mock_model('blogapp.service.BlogPost', specs={'title':'hello'})
     def test_get_all_blog_titles(self):
         blog_titles = get_all_blog_titles()

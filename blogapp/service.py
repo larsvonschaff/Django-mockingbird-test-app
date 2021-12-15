@@ -6,4 +6,3 @@ def get_all_blog_titles():
         titles.append(blogpost.title)
 
     return titles    
-
